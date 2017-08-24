@@ -17,7 +17,6 @@ module Json2xslx
 
 			@name             = options[:name] || 'Worksheet'
 			@path             = options[:path] || ((Dir.exists?("#{ENV['HOME']}/Json2xslx/#{Time.now.to_s}")) ? "#{ENV['HOME']}/Json2xslx/" : FileUtils::mkdir_p("#{ENV['HOME']}/Json2xslx/#{Time.now.to_s}").first)
-			puts @path
 			@header_row       = options[:header_row] || 0
 			@data_row         = @header_row + 1
 			@current_data_row = @data_row

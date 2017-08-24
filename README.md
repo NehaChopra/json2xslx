@@ -23,20 +23,22 @@ Or install it yourself as:
 
 ```
 Json2xslx::Generator.new(["../spec/sample.json""])
+```
 
 Json2xslx can take single file containing the JSON formatted data and export it to respect .xslx.
 A folder of Json2xslx will be created in your home directory where you can find your exported files in various time stamp taken on running this file.
 
+```
 Json2xslx::Generator.new(["../spec/sample.json","../spec/sample1.json"], {name: "Test", path: "#{ENV['HOME']}/Json2xslx/"})
+```
 
 Json2xslx can take more than a single file containing the JSON formatted data and export it to respect .xslx.
 When more than single files are provided to the Json2xslx in order to export the .xslx a single workbook with multiple sheet tabs are created.
 A folder of Json2xslx will be created in your home directory where you can find your exported files in various time stamp taken on running this file.
 
-
 Where to find your generated excel export:
 Folder structure: home_directory/Json2xslx/time_stamp/cretead_file.xslx
-```
+
 
 ## Development
 

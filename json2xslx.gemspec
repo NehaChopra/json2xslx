@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["neha"]
   spec.email         = ["nchopra456@gmail.com"]
 
-  spec.summary       = "Convert JSON formatted file to .XSLX file"
-  spec.description   = "File containing the JSON data is converted to .XSLX file"
+  spec.summary       = "Convert JSON formatted file to .XLS file"
+  spec.description   = "File containing the JSON data is converted to .XLS file"
   spec.homepage      = "https://github.com/NehaChopra/json2xslx"
   spec.license       = "MIT"
 

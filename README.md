@@ -1,7 +1,9 @@
+# Deprecated Please use https://github.com/NehaChopra/json2xls
+
 # Json2xslx
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/json2xslx`. To experiment with that code, run `bin/console` for an interactive prompt.
-This gem will expect an file conatining JSON in it and convert it into the respective .XSLX file as an exporter.
+This gem will expect an file containing JSON in it and convert it into the respective .XLS file as an exporter.
 
 ## Installation
 
@@ -25,19 +27,19 @@ Or install it yourself as:
 Json2xslx::Generator.new(["../spec/sample.json""])
 ```
 
-Json2xslx can take single file containing the JSON formatted data and export it to respect .xslx.
+Json2xslx can take single file containing the JSON formatted data and export it to respect .xls.
 A folder of Json2xslx will be created in your home directory where you can find your exported files in various time stamp taken on running this file.
 
 ```
-Json2xslx::Generator.new(["../spec/sample.json","../spec/sample1.json"], {name: "Test", path: "#{ENV['HOME']}/Json2xslx/"})
+Json2xslx::Generator.new(["../spec/sample.json","../spec/sample1.json"], {name: "Test", path: "#{ENV['HOME']}/Json2x/"})
 ```
 
-Json2xslx can take more than a single file containing the JSON formatted data and export it to respect .xslx.
-When more than single files are provided to the Json2xslx in order to export the .xslx a single workbook with multiple sheet tabs are created.
+Json2xslx can take more than a single file containing the JSON formatted data and export it to respect .xls.
+When more than single files are provided to the Json2xslx in order to export the .xls a single workbook with multiple sheet tabs are created.
 A folder of Json2xslx will be created in your home directory where you can find your exported files in various time stamp taken on running this file.
 
 Where to find your generated excel export:
-Folder structure: home_directory/Json2xslx/time_stamp/cretead_file.xslx
+Folder structure: home_directory/Json2xslx/time_stamp/created_file.xls
 
 
 ## Development

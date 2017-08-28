@@ -1,7 +1,7 @@
 ##
 #
 #   author: neha chopra,
-#   Reads the files containing the JSON and convert them to .XSLX file
+#   Reads the files containing the JSON and convert them to .XLS file
 #
 #
 
@@ -42,7 +42,7 @@ module Json2xslx
 
 		##
 		#
-		# writing to .XSLX file
+		# writing to .XLS file
 		#
 		#
 		def write file
@@ -83,7 +83,7 @@ module Json2xslx
 
 		##
 		#
-		# After processing of the objects .XSLX file is build
+		# After processing of the objects .XLS file is build
 		#
 		#
 		def process_json json_objects
@@ -95,9 +95,9 @@ module Json2xslx
 
 		##
 		#
-		# Building the .XSLX files
-		# build_headers method build the headers for .XSLX file
-		# build_values method ensures the values get generated for .XSLX file
+		# Building the .XLS files
+		# build_headers method build the headers for .XLS file
+		# build_values method ensures the values get generated for .XLS file
 		#
 		def build_xslx json_objects, key, sheet
 
@@ -110,7 +110,7 @@ module Json2xslx
 
 		##
 		#
-		# building headers for .XSLX file
+		# building headers for .XLS file
 		#
 		#
 		def build_headers json_objects, sheet
@@ -128,7 +128,7 @@ module Json2xslx
 
 		##
 		#
-		# building result set row values for .XSLX file
+		# building result set row values for .XLS file
 		#
 		#
 		def build_values json_objects, excel_headers, key, sheet
